@@ -30,14 +30,15 @@ So lets go:
 After you entered all informations to the config dialog click "Save & Close".
 The Adapter should now restart and you are ready to go!
 
+Image by <a href="https://www.freepik.com/free-photo/3d-view-map_45145244.htm#query=route%20logo&position=7&from_view=search&track=ais&uuid=74e89d28-9cfe-4b5e-94c9-a965b83497b4">Freepik</a>
 ## Changelog
 <!--
     Placeholder for the next version (at the beginning of the line):
     ### **WORK IN PROGRESS**
 -->
 
-### **WORK IN PROGRESS**
-* (icastillo) initial release
+### **0.0.1 (2023-11-27)**
+* (icastillo) Added support for here.com API v8 version. Added translations.
 
 ## License
 The MIT License (MIT)
