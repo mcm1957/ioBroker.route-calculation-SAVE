@@ -37,8 +37,8 @@ Image by <a href="https://www.freepik.com/free-photo/3d-view-map_45145244.htm#qu
     ### **WORK IN PROGRESS**
 -->
 
-### **0.0.1 (2023-11-27)**
-* (icastillo) Added support for here.com API v8 version. Added translations.
+### **0.0.1**
+* (icastillo)  (2023-11-27) - Added support for here.com API v8 version. Added translations.
 
 ## License
 The MIT License (MIT)
