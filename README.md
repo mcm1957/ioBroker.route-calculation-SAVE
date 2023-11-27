@@ -12,7 +12,7 @@
 **Tests:** ![Test and Release](https://github.com/icastillo15/ioBroker.route-calculation/workflows/Test%20and%20Release/badge.svg)
 -->
 ## route-calculation adapter for ioBroker
-This Adapter uses the HERE.com API version 8 to check the traffic on your routes. This adapter is a fork of https://github.com/iobroker-community-adapters/ioBroker. 
+This Adapter uses the HERE.com API version 8 to check the traffic on your routes. This adapter is a fork of https://github.com/iobroker-community-adapters/ioBroker.roadtraffic. 
 You can configure multiple routes and the adapter will check the actual traffic situation and show you how long your journey will take.
 The Adapter has an alarm clock - so you can tell the Adapter at which time you have to be at work - and the Adapter starts playing Radio and makes an announcement on Alexa (Alexa2 Adapter required) - or you can use your own script to react on the alarm of the adapter..
 
