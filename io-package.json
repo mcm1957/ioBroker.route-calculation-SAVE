@@ -76,9 +76,6 @@
                 "js-controller": ">=4.0.24"
             }
         ],
-        "adminUI": {
-            "config": "json"
-          },
         "globalDependencies": [
             {
                 "admin": ">=5.1.13"
