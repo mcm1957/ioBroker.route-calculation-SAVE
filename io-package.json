@@ -1,0 +1,140 @@
+{
+    "common": {
+        "name": "route-calculation",
+        "version": "0.0.1",
+        "news": {
+            "0.0.1": {
+                "en": "initial release",
+                "de": "Erstveröffentlichung",
+                "ru": "Начальная версия",
+                "pt": "lançamento inicial",
+                "nl": "Eerste uitgave",
+                "fr": "Première version",
+                "it": "Versione iniziale",
+                "es": "Versión inicial",
+                "pl": "Pierwsze wydanie",
+                "uk": "Початкова версія",
+                "zh-cn": "首次出版"
+            }
+        },
+        "title": "route-calculation",
+        "titleLang": {
+            "en": "route-calculation",
+            "de": "Routenberechnung",
+            "ru": "расчет маршрута",
+            "pt": "cálculo de rota",
+            "nl": "routeberekening",
+            "fr": "calcul d'itinéraire",
+            "it": "calcolo del percorso",
+            "es": "calculo de ruta",
+            "pl": "obliczanie trasy",
+            "uk": "розрахунок маршруту",
+            "zh-cn": "路线计算"
+        },
+        "desc": {
+            "en": "Adapter to check actual traffic on the road based on the HERE.com API v8 version. Can wake someone up in time to arrive at destination in time",
+            "de": "Adapter zur Überprüfung der aktuellen Verkehrslage auf der Straße basierend auf der HERE.com API v8 Version. Kann jemanden rechtzeitig aufwecken, um rechtzeitig am Zielort anzukommen",
+            "ru": "Проверьте ситуацию с трафиком с помощью HERE.com API v8.",
+            "pt": "Verifique a situação do tráfego com a API Here.com v8",
+            "nl": "Controleer de verkeerssituatie met HERE.com API v8",
+            "fr": "Vérifiez la situation du trafic avec l'API HERE.com v8",
+            "it": "Controlla la situazione del traffico con HERE.com API v8",
+            "es": "Verifique la situación del tráfico con HERE.com API v8",
+            "pl": "Sprawdź sytuację na drodze za pomocą interfejsu API Here.com w wersji 8",
+            "uk": "Перевірте трафік за допомогою HERE.com API v8",
+            "zh-cn": "使用 HERE.com API v8 检查流量情况"
+        },
+        "authors": [
+            "BuZZy1337 <buzzy1337@outlook.de>",
+            "iobroker-community-adapters <mcm57@gmx.at>",
+            "icastillo15 <starwarsmalu@gmail.com>"
+        ],
+        "keywords": [
+            "ioBroker",
+            "traffic",
+            "Maps",
+            "Smart Home",
+            "home automation",
+            "alarmclock"
+        ],
+        "license": "MIT",
+        "platform": "Javascript/Node.js",
+        "main": "main.js",
+        "icon": "route-calculation.png",
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/icastillo15/ioBroker.route-calculation/main/admin/route-calculation.png",
+        "readme": "https://github.com/icastillo15/ioBroker.route-calculation/blob/main/README.md",
+        "loglevel": "info",
+        "mode": "daemon",
+        "type": "misc-data",
+        "messagebox": true,
+        "subscribe": "messagebox",
+        "materialize": true,
+        "stopBeforeUpdate": true,
+        "compact": false,
+        "connectionType": "cloud",
+        "dataSource": "poll",
+        "dependencies": [
+            {
+                "js-controller": ">=4.0.24"
+            }
+        ],
+        "globalDependencies": [
+            {
+                "admin": ">=5.1.13"
+            }
+        ]
+    },
+    "native": {
+        "pollingInterval": 10,
+        "speakString": "Guten Morgen %name. Bei aktueller Verkehrslage benötigst du %dur zur Arbeit.",
+        "alarmVolume": 10,
+        "stationId": "s18018"
+    },
+    "objects": [
+        {
+            "_id": "_design/route-calculation",
+            "language": "javascript",
+            "views": {
+                "listRouteIDs": {
+                    "map": "function(doc) {\n  if (typeof doc.native !== 'undefined' && typeof doc.common !== 'undefined' && doc.native.routeid && doc.common.name) {\n   emit(doc._id, {[doc.native.routeid]:doc.common.name});\n  }\n}"
+                }
+            }
+        }
+    ],
+    "instanceObjects": [
+        {
+            "_id": "refresh",
+            "type": "state",
+            "common": {
+                "name": "Refresh all routes now.",
+                "type": "boolean",
+                "role": "button",
+                "read": true,
+                "write": true
+            },
+            "native": {}
+        },
+        {
+            "_id": "info",
+            "type": "channel",
+            "common": {
+                "name": "Information"
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.connection",
+            "type": "state",
+            "common": {
+                "role": "indicator.connected",
+                "name": "If HERE API Key is valid",
+                "type": "boolean",
+                "read": true,
+                "write": false,
+                "def": false
+            },
+            "native": {}
+        }
+    ]
+}
