@@ -1,14 +1,14 @@
 ![Logo](admin/route-calculation.png)
 # ioBroker.route-calculation
-
+<!--
 [![NPM version](https://img.shields.io/npm/v/iobroker.route-calculation.svg)](https://www.npmjs.com/package/iobroker.route-calculation)
 [![Downloads](https://img.shields.io/npm/dm/iobroker.route-calculation.svg)](https://www.npmjs.com/package/iobroker.route-calculation)
-<!--
+
 ![Number of Installations](https://iobroker.live/badges/route-calculation-installed.svg)
 ![Current version in stable repository](https://iobroker.live/badges/route-calculation-stable.svg)
--->
+
 [![NPM](https://nodei.co/npm/iobroker.route-calculation.png?downloads=true)](https://nodei.co/npm/iobroker.route-calculation/)
-<!--
+
 **Tests:** ![Test and Release](https://github.com/icastillo15/ioBroker.route-calculation/workflows/Test%20and%20Release/badge.svg)
 -->
 ## route-calculation adapter for ioBroker
