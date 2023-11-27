@@ -2,14 +2,9 @@
   "name": "iobroker.route-calculation",
   "version": "0.0.1",
   "description": "Check traffic situation with HERE.com API v8",
-  "author": {
-    "name": "icastillo",
-    "email": "starwarsmalu@gmail.com"
-  },
+  "author": "icastillo <starwarsmalu@gmail.com>",
   "contributors": [
-    {
-      "name": "icastillo"
-    }
+    "icastillo"
   ],
   "homepage": "https://github.com/icastillo15/ioBroker.route-calculation",
   "license": "MIT",
@@ -23,7 +18,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/icastillo15/ioBroker.route-calculation.git"
+    "url": "git+https://github.com/icastillo15/ioBroker.route-calculation.git"
   },
   "engines": {
     "node": ">= 16"
@@ -84,5 +79,8 @@
   "bugs": {
     "url": "https://github.com/icastillo15/ioBroker.route-calculation/issues"
   },
-  "readmeFilename": "README.md"
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  }
 }
