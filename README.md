@@ -10,7 +10,7 @@
 [![NPM](https://nodei.co/npm/iobroker.route-calculation.png?downloads=true)](https://nodei.co/npm/iobroker.route-calculation/)
 
 **Tests:** ![Test and Release](https://github.com/icastillo15/ioBroker.route-calculation/workflows/Test%20and%20Release/badge.svg)
--->
+
 ## route-calculation adapter for ioBroker
 This Adapter uses the HERE.com API version 8 to check the traffic on your routes. This adapter is a fork of https://github.com/iobroker-community-adapters/ioBroker.roadtraffic. 
 You can configure multiple routes and the adapter will check the actual traffic situation and show you how long your journey will take.
