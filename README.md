@@ -36,6 +36,8 @@ Image by <a href="https://www.freepik.com/free-photo/3d-view-map_45145244.htm#qu
     Placeholder for the next version (at the beginning of the line):
     ### **WORK IN PROGRESS**
 -->
+### 0.0.2 (2023-11-27)
+* (icastillo) Fixed state values warning.
 ### 0.0.1 (2023-11-27)
 * (icastillo) Added support for here.com API v8 version. Added translations.
 
