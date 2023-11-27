@@ -1,6 +1,6 @@
 {
   "name": "iobroker.route-calculation",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Check traffic situation with HERE.com API v8",
   "author": "icastillo <starwarsmalu@gmail.com>",
   "contributors": [
