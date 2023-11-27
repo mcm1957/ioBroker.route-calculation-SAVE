@@ -29,18 +29,6 @@ So lets go:
 After you entered all informations to the config dialog click "Save & Close".
 The Adapter should now restart and you are ready to go!
 
-### Getting started
-You are almost done, only a few steps left:
-1. Create a new repository on GitHub with the name `ioBroker.route-calculation`
-
-1. Push all files to the GitHub repo. The creator has already set up the local repository for you:  
-    ```bash
-    git push origin main
-    ```
-1. Add a new secret under https://github.com/icastillo15/ioBroker.route-calculation/settings/secrets. It must be named `AUTO_MERGE_TOKEN` and contain a personal access token with push access to the repository, e.g. yours. You can create a new token under https://github.com/settings/tokens.
-
-1. Head over to [main.js](main.js) and start programming!
-
 ## Changelog
 <!--
     Placeholder for the next version (at the beginning of the line):
