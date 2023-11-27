@@ -206,7 +206,7 @@ adapter.on('ready', function () {
         }
         routes = adapter.config.routepoints;
         if (!adapter.config.apiKEY) {
-            adapter.log.error('https://github.com/BuZZy1337/ioBroker.route-calculation#getting-started');
+            adapter.log.error('https://github.com/icastillo15/ioBroker.route-calculation');
             adapter.log.error('You need to set the Api KEY in the instance settings!');
         }
         main();
