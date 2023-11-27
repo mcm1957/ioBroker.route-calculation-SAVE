@@ -17,7 +17,6 @@
                 "zh-cn": "首次出版"
             }
         },
-        "title": "route-calculation",
         "titleLang": {
             "en": "route-calculation",
             "de": "Routenberechnung",
@@ -50,10 +49,8 @@
             "icastillo15 <starwarsmalu@gmail.com>"
         ],
         "keywords": [
-            "ioBroker",
             "traffic",
             "Maps",
-            "Smart Home",
             "home automation",
             "alarmclock"
         ],
@@ -79,6 +76,9 @@
                 "js-controller": ">=4.0.24"
             }
         ],
+        "adminUI": {
+            "config": "json"
+          },
         "globalDependencies": [
             {
                 "admin": ">=5.1.13"
